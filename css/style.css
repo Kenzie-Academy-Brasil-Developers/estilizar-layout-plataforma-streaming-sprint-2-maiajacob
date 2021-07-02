@@ -14,25 +14,132 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 **** PÁGINA INICIAL
 */
 
-/* VARIÁVEIS */
-:root{
-  
-}
-
 /*BODY*/
-	body{
-
+	body {
+		background-color: #00002E;
+		width: 95vw;
+		max-width: 1180px;
+		margin: 0 auto;		
 	}
 
 /*TOPO*/
-	header.topo{
-		
+
+	#logo {
+		width: 250px;
+		height: auto;
+	}
+
+	header.top{
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 /*RODAPÉ*/
-	
+
+	footer {
+		text-align: center;
+		margin-top: 40px;
+	}
+
+	button {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1em;
+		color: white;
+		text-align: center;
+		background-color: #00002E;
+		padding: 20px 40px;
+		border: solid 1px white;
+		border-radius: 2px;
+	}
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		
+	.pg-home{
+		display: flex;
+		justify-content: center;
+		padding-top: 80px;
 	}
+
+	h2 {
+		font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+		font-weight: bold;
+		font-size: 2em;
+		color: white;
+		text-align: center;
+		margin: 50px 0px;
+	}
+
+	.users {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.addPerfil {
+		margin-left: 50px;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+		flex-direction: column;
+	}
+
+	.username {
+		color: #808080;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1em;
+		font-weight: bold;
+		text-align: center;
+		padding-top: 20px;
+	}
+
+	.userpic {
+		width: 186px;
+		height: auto;
+		margin: 0px 25px;
+		border: 0.5px solid transparent;
+	}
+
+	li {
+		margin-bottom: 20px;
+	}
+
+	.userpic:hover {
+		border: 0.5px solid lightcyan;
+		transition: 0.8s;
+	}
+
+	button:hover {
+		background-color: #3A2FF8;
+		color: #00002E;
+		font-weight: bold;
+	}
+	
+	figcaption {
+		display: none;
+	}
+/* MEDIA SCREEN ( RESPONSIVIDADE ) */
+
+@media screen and (min-width: 858px) {
+	header.top{
+		position: absolute;
+		left: 0;
+	}
+
+	h2 {
+		font-size: 3em;
+		color: white;
+		text-align: center;
+		margin: 50px 0px;
+	}
+
+	.users {
+		display: flex;
+		justify-content: center;
+	}
+
+	.addPerfil {
+		margin-left: 20px;
+		padding-top: 40px;
+		justify-content: space-between;
+	}
+}
